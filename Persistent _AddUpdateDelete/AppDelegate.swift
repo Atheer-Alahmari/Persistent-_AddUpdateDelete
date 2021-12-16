@@ -76,6 +76,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    // You should have this method already in your AppDelegate.swift file. Only add the line inside.
+    func applicationWillTerminate(application: UIApplication) {
+            // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+     // ------ ADD THE LINE BELOW ------
+            self.saveContext() // ADD THIS LINE
+        }
+
 
 }
 
